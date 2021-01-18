@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Temperature converter</title>
+      <link rel="stylesheet" href="styles.css"> 
+   </head>
+   <body>
+      <div class='container'>
+         <h1 class='title'>temperature converter</h1>
+         <div class='field'>
+            <form class='form'>
+               <label>°C :</label>
+               <input type="number" class='input' id='inputC' 
+               oninput="temperatureConverter(this.value)" 
+               onchange="temperatureConverter(this.value)">
+            </form>
+            <div class='form formX'></form>
+               <p>°F :<br><span id='outputF'>0</span></p>
+            </div>
+            <button class='switch'><a href="switch/index.html">switch</a></button>
+         </div>
+      </div>
+   </body>
+   <script src="script.js"></script>
+</html>
